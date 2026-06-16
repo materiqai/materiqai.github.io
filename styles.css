@@ -47,7 +47,7 @@ body::before {
   z-index: 1;
 }
 
-/* ── hero ── */
+/* hero */
 .hero {
   min-height: 100vh;
   max-width: 540px;
@@ -75,7 +75,7 @@ body::before {
 
 .wordmark {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2rem, 7vw, 3.25rem);
+  font-size: clamp(5rem, 7vw, 3.25rem);
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -165,7 +165,7 @@ body::before {
   margin-top: 0.4rem;
 }
 
-/* ── shared section styles ── */
+/* shared section styles */
 .section-label {
   font-size: 0.72rem;
   font-weight: 500;
@@ -200,7 +200,7 @@ body::before {
   color: rgba(240,240,242,0.7);
 }
 
-/* ── perf section ── */
+/* perf section */
 .perf {
   margin-top: 6rem;
   padding-top: 8rem;
@@ -307,7 +307,7 @@ body::before {
   padding-top: 2.5rem;
 }
 
-/* ── why section ── */
+/* why section */
 .why {
   margin-top: 6rem;
   padding-top: 8rem;
@@ -436,7 +436,7 @@ body::before {
 .why-card--warn .why-verdict { background: rgba(250,180,40,0.12); color: rgba(250,190,60,0.9); }
 .why-card--good .why-verdict { background: rgba(50,210,110,0.12); color: rgba(60,220,120,0.9); }
 
-/* ── team section ── */
+/* team section */
 .team {
   margin-top: 6rem;
   padding-top: 8rem;
@@ -528,7 +528,7 @@ body::before {
   flex-shrink: 0;
 }
 
-/* ── contact section ── */
+/* contact section */
 .contact {
   margin-top: 6rem;
   padding-top: 8rem;
@@ -621,7 +621,7 @@ body::before {
 
 .field-error:empty { display: none; }
 
-/* ── success states ── */
+/* success states */
 .early-access-success[hidden],
 .contact-success[hidden] { display: none; }
 
@@ -674,7 +674,7 @@ body::before {
   margin-bottom: 0.3rem;
 }
 
-/* ── footer ── */
+/* footer */
 footer {
   font-size: 0.78rem;
   color: rgba(240,240,242,0.2);
@@ -683,7 +683,7 @@ footer {
   padding: 3rem 0 2rem;
 }
 
-/* ── responsive: tablet ── */
+/* responsive: tablet */
 @media (max-width: 768px) {
   .perf, .why, .team, .contact {
     margin-top: 4rem;
@@ -696,7 +696,7 @@ footer {
   .why-grid { max-width: 100%; }
 }
 
-/* ── responsive: mobile ── */
+/* responsive: mobile */
 @media (max-width: 600px) {
   .perf-grid { grid-template-columns: 1fr; }
   .perf-arrow { display: none; }
