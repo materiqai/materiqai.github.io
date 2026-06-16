@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaterIQ &mdash; Coming Soon</title>
+  <meta name="description" content="Something new is coming. Be the first to know.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Materiq — Coming Soon">
+  <meta property="og:description" content="Something new is coming. Be the first to know.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="hero">
+      <div class="badge">Stealth Mode</div>
+
+      <h1 class="wordmark">MaterIQ</h1>
+
+      <p class="tagline">
+        The future of <strong><span id="cycling-field">Materials Science</span></strong> starts here.<br>
+        We&rsquo;re building something big. Stay tuned.
+      </p>
+
+      <form id="early-access-form">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-wrap">
+          <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+          <button type="submit">Get early access</button>
+        </div>
+        <div data-fs-error class="hero-error-msg"></div>
+        <p class="form-note">No spam &mdash; just signal when it&rsquo;s time.</p>
+      </form>
+      <div id="early-access-success" hidden class="early-access-success">&#10003; You&rsquo;re on the list &mdash; we&rsquo;ll be in touch.</div>
+    </div>
+
+    <section class="perf">
+      <p class="section-label">Core Technology</p>
+      <h2 class="section-title">Multiple Orders of Magnitude Faster.</h2>
+      <p class="section-sub">
+        MaterIQ replaces expensive computer simulations that take
+        <em>hours or days</em> with physics-grounded AI predictions in <em>under a second</em> &mdash; without sacrificing fidelity.
+      </p>
+
+      <div class="perf-stat">100,000&times;</div>
+      <p class="perf-stat-label">speed-up over traditional physics simulation</p>
+
+      <!-- replace with <img src="images/demo.gif"> when ready -->
+      <div class="gif-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Simulation demo &mdash; GIF coming soon</span>
+      </div>
+
+      <p class="section-sub" style="margin-bottom:1.5rem;">
+        Simulation of a reactive material:
+      </p>
+
+      <div class="perf-grid">
+        <div class="perf-col">
+          <div class="perf-col-label">Traditional Physics Modeling</div>
+          <div class="perf-time">Hours</div>
+          <p class="perf-col-desc">Numerically solving complex differential equations per simulation run</p>
+        </div>
+
+        <div class="perf-col">
+          <div class="perf-col-label">Physics-Na&iuml;ve AI</div>
+          <div class="perf-time">Minutes</div>
+          <p class="perf-col-desc">Faster, but learns statistical patterns &mdash; cannot generalize beyond training data</p>
+        </div>
+
+        <div class="perf-col perf-col--highlight">
+          <div class="perf-col-label">Physics-Aware AI &mdash; PARC</div>
+          <div class="perf-time">&lt; 1 sec</div>
+          <p class="perf-col-desc">Physics embedded in the architecture &mdash; high-fidelity prediction, any regime</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <p class="section-label">Why MaterIQ</p>
+      <h2 class="section-title">Standard AI cannot solve physics.</h2>
+      <p class="section-sub">
+        The correct solution requires both <em>physics-embedded architecture</em> and <em>domain specificity</em>.
+      </p>
+
+      <div class="why-grid">
+
+        <div class="why-card why-card--bad">
+          <div class="why-card-label">Wrong tool</div>
+          <div class="why-card-title">Traditional (Statistical) ML</div>
+          <ul class="why-bullets">
+            <li>Interpolates within training distribution only</li>
+            <li>Cannot enforce physical laws or constraints</li>
+            <li>Produces physically impossible predictions</li>
+            <li>Requires massive labeled datasets</li>
+          </ul>
+          <span class="why-verdict">&#x2715; Wrong tool for physics</span>
+        </div>
+
+        <div class="why-card why-card--warn">
+          <div class="why-card-label">Not sufficient</div>
+          <div class="why-card-title">Large Foundation Models</div>
+          <ul class="why-bullets">
+            <li>Better generalization to unseen tasks</li>
+            <li>Still learns physics as data patterns</li>
+            <li>Physics equations not in architecture</li>
+            <li>Can hallucinate unphysical predictions</li>
+          </ul>
+          <span class="why-verdict">&#x25B2; Better, but still not suitable</span>
+        </div>
+
+        <div class="why-card why-card--good">
+          <div class="why-card-label">Most viable</div>
+          <div class="why-card-title">Physics-Aware Deep Learning</div>
+          <ul class="why-bullets">
+            <li>Physics equations ARE the architecture</li>
+            <li>Generalizes to unseen physical regimes</li>
+            <li>Physically impossible outputs structurally prevented</li>
+            <li>Data-efficient&mdash;physics knowledge reduces learning burden</li>
+          </ul>
+          <span class="why-verdict">&#x2713; Most viable choice</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="team">
+      <p class="section-label">The Founding Team</p>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/baek.jpg" alt="Stephen Baek"></div>
+          <div class="team-name">Stephen Baek, Ph.D.</div>
+          <div class="team-role">Interim CEO &middot; Co-Founder</div>
+          <div class="team-tags">
+            <span class="team-tag">Physics-Aware Deep Learning</span>
+            <span class="team-tag">Scientific Machine Learning</span>
+            <span class="team-tag">Computational Geometry &amp; Vision</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/udaykumar.jpg" alt="H.S. Udaykumar"></div>
+          <div class="team-name">H.S. Udaykumar, Ph.D.</div>
+          <div class="team-role">Chief Scientific Officer &middot; Co-Founder</div>
+          <div class="team-tags">
+            <span class="team-tag">Computational Mechanics</span>
+            <span class="team-tag">Reactive Flow Dynamics</span>
+            <span class="team-tag">Scientific Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar"><img src="images/choi.png" alt="Joseph Choi"></div>
+          <div class="team-name">Joseph Choi</div>
+          <div class="team-role">Director of R&amp;D &middot; Co-Founder</div>
+          <div class="team-tags">
+            <span class="team-tag">Physics-Aware Deep Learning</span>
+            <span class="team-tag">Scientific Machine Learning</span>
+            <span class="team-tag">Software Engineering</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Partner With MaterIQ</h2>
+      <p class="section-sub">
+        Working on problems in <em>defense materials</em>, <em>aerospace</em>, or <em>advanced manufacturing</em>
+        where simulation speed and fidelity matter? We want to hear from you.
+      </p>
+
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div data-fs-error class="contact-error-global"></div>
+        <div class="contact-row">
+          <div class="contact-field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" placeholder="Your name" autocomplete="name" required>
+          </div>
+          <div class="contact-field">
+            <label for="c-org">Organization</label>
+            <input type="text" id="c-org" name="organization" placeholder="Your organization" autocomplete="organization">
+          </div>
+        </div>
+        <div class="contact-field">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" name="email" placeholder="your@email.com" autocomplete="email" required>
+          <span class="field-error" id="email-error"></span>
+        </div>
+        <div class="contact-field">
+          <label for="c-msg">How can we help?</label>
+          <textarea id="c-msg" name="message" placeholder="Briefly describe your application or use case&hellip;"></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Send Inquiry</button>
+      </form>
+
+      <div id="contact-success" hidden class="contact-success">
+        <strong>Message received.</strong>
+        <p>Thank you for reaching out &mdash; we&rsquo;ll be in touch shortly.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>&copy; 2026 MaterIQ Inc. All rights reserved</footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
