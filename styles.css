@@ -167,7 +167,7 @@ body::before {
 
 /* shared section styles */
 .section-label {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -177,7 +177,7 @@ body::before {
 }
 
 .section-title {
-  font-size: clamp(1.4rem, 4vw, 1.85rem);
+  font-size: clamp(2.4rem, 4vw, 1.85rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -451,7 +451,7 @@ body::before {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .team-grid {
