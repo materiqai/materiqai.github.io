@@ -75,7 +75,7 @@ body::before {
 
 .wordmark {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(5rem, 7vw, 3.25rem);
+  font-size: clamp(2.5rem, 9vw, 5rem);
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -177,7 +177,7 @@ body::before {
 }
 
 .section-title {
-  font-size: clamp(2.4rem, 4vw, 1.85rem);
+  font-size: clamp(1.85rem, 4vw, 2.4rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -710,12 +710,12 @@ footer {
 }
 
 @media (max-width: 560px) {
-  body { padding: 0 1.25rem; }
+  body { padding: 0 1rem; }
 
   .perf, .why, .team, .contact {
-    margin-top: 3rem;
-    padding-top: 3.5rem;
-    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 
   .tagline { font-size: 1rem; }
