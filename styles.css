@@ -75,7 +75,7 @@ body::before {
 
 .wordmark {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(4.5rem, 16.2vw, 9rem);
+  font-size: clamp(3rem, 10.8vw, 6rem);
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1;
