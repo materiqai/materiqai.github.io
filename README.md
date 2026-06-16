@@ -1,3 +1,3 @@
-# materiq.github.io
+# materiqai.github.io
 
 Landing page for **MaterIQ**.
