@@ -763,8 +763,12 @@ footer {
 
   .hero {
     justify-content: flex-start;
-    padding-top: 14vh;
+    padding-top: 8vh;
     padding-bottom: 5rem;
+  }
+
+  .scroll-hint {
+    bottom: 3.5rem;
   }
 
   .perf, .why, .team, .contact {
