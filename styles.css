@@ -12,6 +12,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 html, body { height: 100%; }
@@ -51,13 +52,61 @@ body::before {
 .hero {
   min-height: 100vh;
   max-width: 680px;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: url('images/background.jpg') center center / cover no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 85%);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 85%);
+}
+
+.hero > *:not(.hero-bg):not(.scroll-hint) {
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(240, 240, 242, 0.35);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  z-index: 1;
+  animation: scrollBounce 2.2s ease-in-out infinite;
+}
+
+.scroll-hint:hover {
+  color: rgba(240, 240, 242, 0.65);
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
 
 .badge {
   display: inline-block;
@@ -202,7 +251,7 @@ body::before {
 
 /* perf section */
 .perf {
-  margin-top: 6rem;
+  margin-top: 10rem;
   padding-top: 8rem;
   padding-bottom: 5rem;
   border-top: 1px solid var(--border);

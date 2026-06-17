@@ -57,8 +57,17 @@ function initCyclingText() {
   }, 2000);
 }
 
+function initParallax() {
+  const heroBg = document.querySelector('.hero-bg');
+  if (!heroBg) return;
+  window.addEventListener('scroll', function () {
+    heroBg.style.transform = 'translateX(-50%) translateY(' + (window.scrollY * 0.4) + 'px)';
+  }, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   initCyclingText();
+  initParallax();
 
   connectFormspree(
     document.getElementById('early-access-form'),

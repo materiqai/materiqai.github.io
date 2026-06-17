@@ -18,6 +18,7 @@
 
   <div class="container">
     <div class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="badge">Stealth Mode</div>
 
       <h1 class="wordmark">MaterIQ</h1>
@@ -37,9 +38,16 @@
         <p class="form-note">No spam &mdash; just signal when it&rsquo;s time.</p>
       </form>
       <div id="early-access-success" hidden class="early-access-success">&#10003; You&rsquo;re on the list &mdash; we&rsquo;ll be in touch.</div>
+
+      <a href="#content" class="scroll-hint" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+        <span>Scroll to explore</span>
+      </a>
     </div>
 
-    <section class="perf">
+    <section class="perf" id="content">
       <p class="section-label">Core Technology</p>
       <h2 class="section-title">Multiple Orders of Magnitude Faster.</h2>
       <p class="section-sub">
