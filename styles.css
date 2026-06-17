@@ -768,7 +768,7 @@ footer {
   }
 
   .scroll-hint {
-    bottom: 3.5rem;
+    bottom: 5rem;
   }
 
   .perf, .why, .team, .contact {
@@ -777,13 +777,17 @@ footer {
     padding-bottom: 2rem;
   }
 
-  .tagline { font-size: 1rem; }
+  .tagline { font-size: 0.85rem; margin-left: -0.5rem; margin-right: -0.5rem; }
+
+  .section-sub { font-size: 0.85rem; }
 
   .section-title { font-size: 1.35rem; }
 
   .why-grid { grid-template-columns: 1fr; }
 
   .team-grid { grid-template-columns: 1fr; }
+
+  .team-avatar { width: 224px; height: 224px; }
 
   .contact-row { grid-template-columns: 1fr; }
 
